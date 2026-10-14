@@ -1,0 +1,48 @@
+# Local analysis paths.
+# Copy this file to config/paths.yaml and edit the values for your workstation.
+
+base_dir: /path/to/tma_dataset
+previous_results_dir: /path/to/analysis_results
+
+groups:
+  mapk3:
+    exon_candidates:
+      - Exon4
+      - Exon4_MAPK3
+      - Exon4_initial
+      - Exon4_TMA
+    noexon_candidates:
+      - NoExon4
+      - NoExon4_MAPK3
+      - NoExon4_initial
+      - NoExon4_TMA
+
+  smndc1:
+    exon_candidates:
+      - Exon4_SMNDC1
+      - Exon4_S
+      - Exon4_SMNDC
+    noexon_candidates:
+      - NoExon4_SMNDC1
+      - NoExon_SMNDC1
+      - NoExon4_S
+      - NoExon_S
+
+channels:
+  B:
+    - CHAN_B_nucleosIF
+  G:
+    - CHAN_G_proteinaIF
+  R:
+    - CHAN_R_citoplasmaIF
+
+xlsx_candidates:
+  - TMA_Array.xlsx
+  - Tumor_Annotations.xlsx
+
+clinical:
+  cpid_col: CPID
+  diagnosis_date_col: Date_of_diagnosis
+  followup_or_death_col: Date_merged_last_followup_death
+  censor_col: OS_censor
+  followup_is_days: false

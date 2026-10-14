@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.python-version
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local configuration
+config/paths.yaml
+
+# Local/private data
+data/*
+!data/README.md
+
+# Clinical and TMA annotation files
+TMA_Array.xlsx
+Tumor_Annotations.xlsx
+
+# Generated outputs
+outputs/
+results/
+logs/
+figures/
+reports/
+
+# Common generated analysis files
+*.log
+*.tmp
+
+# Packaging and test caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
